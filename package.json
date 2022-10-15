@@ -1,0 +1,44 @@
+{
+  "name": "alveyinfo-ui",
+  "version": "0.0.1",
+  "description": "An open-source frontend for the Alveyinfo API",
+  "scripts": {
+    "dev":   "ALVEYINFO_API_BASE_SERVER=http://127.0.0.1:7001/ ALVEYINFO_API_BASE_CLIENT=http://127.0.0.1:7001 ALVEYINFO_API_BASE_WS=//127.0.0.1/ ALVEY_NETWORK=testnet HOST=0.0.0.0 PORT=3000 nuxt",
+    "build": "ALVEYINFO_API_BASE_CLIENT=/api/ ALVEYINFO_API_BASE_SERVER=http://localhost:3001/ ALVEYINFO_API_BASE_WS=//localhost/ nuxt build",
+    "start": "PORT=3000 nuxt start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alveycoin/alveyinfo-ui.git"
+  },
+  "keywords": [
+    "alvey",
+    "alveyinfo",
+    "alvey explorer"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alveycoin/alveyinfo-ui/issues"
+  },
+  "homepage": "https://github.com/alveycoin/alveyinfo-ui#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bn.js": "^5.0.0",
+    "bs58": "^4.0.1",
+    "buffer": "^5.4.3",
+    "crypto-browserify": "^3.12.0",
+    "moment": "^2.24.0",
+    "nuxt": "^2.9.2",
+    "vue-i18n": "^8.14.1"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.1",
+    "bulma": "^0.7.5",
+    "echarts": "^4.3.0",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "socket.io-client": "^2.2.0",
+    "yaml-loader": "^0.5.0"
+  }
+}
